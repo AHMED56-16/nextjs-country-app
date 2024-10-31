@@ -1,11 +1,11 @@
 "use client";
 import { countries } from '../../../main';
 
-interface Params {
+type Params = {
   params: {
     country_name: string;
   };
-}
+};
 
 const CountryDetails = ({ params }: Params) => {
   const country = countries[params.country_name];
